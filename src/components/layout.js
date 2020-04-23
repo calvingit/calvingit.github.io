@@ -59,9 +59,10 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()},{` `}
+        <a href="http://www.beian.miit.gov.cn/"> 赣ICP备20004402号</a>. This
+        site is generated with {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>.
       </footer>
     </div>
   )

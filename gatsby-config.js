@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `张文的博客`,
+    title: `Calvin's Blog`,
     author: {
-      name: `张文`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Calvin`,
+      summary: `who lives and works in Shenzhen building useful things.`,
     },
     description: ``,
     siteUrl: `https://calvincheung.xyz/`,
