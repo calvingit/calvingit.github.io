@@ -7,11 +7,13 @@ cache: npm
 branches:
   only:
     - blog
+install: yarn install
+script: yarn build
 deploy:
-  provider: script
-  script: yarn && yarn build && yarn deploy
+  provider: pages
   skip_cleanup: true
+  target-branch: master
   github-token: "$GH_TOKEN"
   local_dir: "./public"
   on:
-    branch: master
+    branch: blog
