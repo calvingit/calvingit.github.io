@@ -1,6 +1,8 @@
 language: node_js
+before_script:
+  - npm install -g yarn gatsby-cli 
 node_js:
-  - "10"
+  - "12"
 cache: npm
 branches:
   only:
@@ -9,5 +11,6 @@ deploy:
   provider: script
   script: yarn && yarn deploy
   skip_cleanup: true
+  github-token: $GH_TOKEN
   on:
     branch: master
