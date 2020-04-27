@@ -12,6 +12,6 @@ deploy:
   script: yarn && yarn build && yarn deploy
   skip_cleanup: true
   github-token: "$GH_TOKEN"
-  local_dir: public
+  local_dir: "./public"
   on:
-    all_branches: true
+    branch: master
