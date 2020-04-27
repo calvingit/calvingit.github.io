@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "10"
+cache: npm
+branches:
+  only:
+    - blog
+deploy:
+  provider: script
+  script: yarn && yarn deploy
+  skip_cleanup: true
+  on:
+    branch: master
