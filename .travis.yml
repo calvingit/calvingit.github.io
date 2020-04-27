@@ -9,8 +9,9 @@ branches:
     - blog
 deploy:
   provider: script
-  script: yarn && yarn deploy
+  script: yarn && yarn build && yarn deploy
   skip_cleanup: true
-  github-token: $GH_TOKEN
+  github-token: "$GH_TOKEN"
+  local_dir: public
   on:
-    branch: master
+    all_branches: true
