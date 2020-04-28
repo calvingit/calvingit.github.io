@@ -1,16 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Wen's Blog`,
-    author: {
-      name: `Zhang Wen`,
-      summary: `who lives and works in Shenzhen building useful things.`,
-    },
-    description: ``,
-    siteUrl: `https://zhangwen.dev/`,
+    author: `Zhang Wen`,
+    description: `Personal blog by Zhang Wen. I explain with words and code.`,
+    siteUrl: `https://zhangwen.dev`,
     social: {
       twitter: `calvin_cheung`,
     },
   },
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
